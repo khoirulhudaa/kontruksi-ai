@@ -14,14 +14,16 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
             <PersistGate loading={null} persistor={persistor}>
                 <Router>
                     <Suspense fallback={<LoadingFallback />}>
-                        <Routes>
-                            {Routers.map((router: any, index: number) => (
-                                <Route
-                                    key={index}
-                                    path={router.path}
-                                    element={<router.component />}
-                                />
-                            ))}
+                    <Routes>
+                        {
+                            Routers.map((router, index) => (
+                            <Route  
+                                key={index}
+                                path={router.path}
+                                element={<router.component />}
+                            />
+                            ))
+                        }
                         </Routes>
                     </Suspense>
                 </Router>
