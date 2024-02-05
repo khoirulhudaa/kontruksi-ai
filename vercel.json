@@ -1,14 +1,21 @@
 {
     "version": 2,
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/main.tsx"
-      },
-      {
-        "src": "/(.*)",
-        "dest": "/index.html"
-      }
+        {
+            "src": "/(.*)",
+            "dest": "/main.tsx"
+        },
+        {
+            "src": "/(.*)",
+            "dest": "/index.html"
+        },
+        {
+            "src": "/board/owner/(.*)",
+            "dest": "/main.tsx"
+        },
+        {
+            "src": "/home/owner/(.*)",
+            "dest": "/main.tsx"
+        }
     ]
-  }
-  
+}
