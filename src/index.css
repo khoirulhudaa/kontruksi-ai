@@ -1,0 +1,32 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+select {
+    -webkit-appearance: none; /* for Chrome */
+    -moz-appearance: none; /* for Firefox */
+    appearance: none; /* for standard browsers */
+    text-indent: 1px;
+    padding-left: 2px;
+    text-overflow: '';
+}
+
+table thead th {
+    border: 6px solid #FFDECC;
+    padding: 12px 4px;
+    text-align: center;
+    font-weight: normal;
+    background-color: #D9D9D9;
+}
+
+table tbody td {
+    border: 6px solid #FFDECC;
+    padding: 12px 4px;
+    text-align: center;
+    background-color: white;
+    color: black;
+}
+
+#table2 tbody td {
+    border: none;
+}
